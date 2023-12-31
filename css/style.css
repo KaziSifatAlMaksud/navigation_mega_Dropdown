@@ -115,7 +115,7 @@ header {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
- @media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 200px) {
   .cd-dropdown-trigger {
     font-size: 1.5rem;
   }
@@ -152,22 +152,22 @@ header {
   height: 60px;
   line-height: 50px;
 }
-@media only screen and (min-width: 768px) {
+ @media only screen and (min-width: 768px) {
   .cd-dropdown h2,
   .cd-dropdown-content a,
   .cd-dropdown-content ul a {
     height: 60px;
     line-height: 60px;
   }
-}
-@media only screen and (min-width: 1024px) {
+} 
+ @media only screen and (max-width: 1024px) { 
   .cd-dropdown h2,
   .cd-dropdown-content a,
   .cd-dropdown-content ul a {
     height: 50px;
     line-height: 50px;
   }
-}
+ } 
 
 .cd-dropdown h2,
 .cd-dropdown-content a,
@@ -176,8 +176,8 @@ header {
   padding: 0 20px;
 }
 
-.cd-dropdown {
-  position: fixed;
+.cd-dropdown { 
+position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -186,7 +186,6 @@ header {
   background-color: #111433;
   color: #ffffff;
   visibility: hidden;
-  /* Force Hardware Acceleration */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
@@ -202,7 +201,7 @@ header {
   -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
   -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
   transition: transform 0.5s 0s, visibility 0s 0.5s;
-}
+} 
 .cd-dropdown h2 {
   position: relative;
   z-index: 1;
@@ -271,7 +270,7 @@ header {
     top: 5px;
   }
 } */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 200px) {
   .cd-dropdown {
     position: absolute;
     top: calc(100% - 2px);
@@ -396,15 +395,15 @@ header {
 .dropdown-is-active .cd-dropdown-content, .dropdown-is-active .cd-dropdown-content ul {
   -webkit-overflow-scrolling: touch;
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .cd-dropdown-content, .cd-dropdown-content ul {
     padding-top: 60px;
   }
   .cd-dropdown-content a, .cd-dropdown-content ul a {
     font-size: 1.8rem;
   }
-}
-@media only screen and (min-width: 1024px) {
+} */
+@media only screen and (min-width: 200px) {
   .cd-dropdown-content, .cd-dropdown-content ul {
     padding-top: 0;
     overflow: visible;
@@ -517,7 +516,7 @@ header {
 .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-12::before {
   background-image: url("../img/nucleo-icon-12.svg");
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 200px) {
   .cd-dropdown-content {
     /* reset mobile style */
     position: static;
@@ -840,50 +839,8 @@ header {
     visibility: visible;
   }
 }
-.cd-search input[type="search"] {
-  width: 100%;
-  height: 50px;
-  padding: 0 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background-color: #242643;
-  color: #ffffff;
-  border: none;
-  border-radius: 0;
-}
-.cd-search input[type="search"]::-webkit-input-placeholder {
-  color: #ffffff;
-}
-.cd-search input[type="search"]::-moz-placeholder {
-  color: #ffffff;
-}
-.cd-search input[type="search"]:-moz-placeholder {
-  color: #ffffff;
-}
-.cd-search input[type="search"]:-ms-input-placeholder {
-  color: #ffffff;
-}
-.cd-search input[type="search"]:focus {
-  background: #ffffff;
-  color: #111433;
-  outline: none;
-}
-.cd-search input[type="search"]:focus::-webkit-input-placeholder {
-  color: rgba(17, 20, 51, 0.4);
-}
-.cd-search input[type="search"]:focus::-moz-placeholder {
-  color: rgba(17, 20, 51, 0.4);
-}
-.cd-search input[type="search"]:focus:-moz-placeholder {
-  color: rgba(17, 20, 51, 0.4);
-}
-.cd-search input[type="search"]:focus:-ms-input-placeholder {
-  color: rgba(17, 20, 51, 0.4);
-}
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 200px) {
   .cd-search input[type="search"] {
     background-color: #ebebeb;
   }
@@ -931,7 +888,7 @@ header {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 200px) {
   .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
     background: #b3b3b3;
   }
@@ -950,7 +907,7 @@ header {
   transform-origin: 9px 50%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 200px) {
   .open-to-left .cd-dropdown-content > .has-children > a {
     padding-left: 40px;
     padding-right: 20px;
