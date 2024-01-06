@@ -1002,12 +1002,43 @@ header {
   display: none;
 }
 
-.card{
-  padding: 10px;
 
+.card {
+  padding: 10px;
 }
-.card:hover{
-  padding: 10px;
-  background-color: #e6e6e6;
 
+.card:hover {
+  background-color: #f1efef;
+}
+
+.card.selected {
+  background-color: #f5f4f4; 
+  box-shadow: inset 2px 0 0 #3f8654;
+  color: #3f8654!important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Optional: Style for the <p> tag inside .col-8 */
+.col-8 p {
+  color: black;
+  margin: 0; /* To remove default margin of <p> */
 }
